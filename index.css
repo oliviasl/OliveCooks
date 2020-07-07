@@ -4,27 +4,40 @@ body {
     font-family: 'Poiret One', cursive;
 }
 
+.banner {
+    margin-top: 15vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .banner img {
+    display: block;
+    position: relative;
     opacity: .85;
-    transition:
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    min-width: 1500px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .banner-text {
     background-color: white;
     position: absolute;
-    transform: translate(0%, -50%);
-    top: 48%;
+    display: block;
+    margin-top: -22%;
     left: 0;
     right: 0;
     opacity: .8;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: .8em;
+    padding-bottom: .5em;
     transition: ease-in-out 300ms;
 }
 
 .banner-text h1 {
     color: black;
-    font-size: 36px;
+    font-size: 3vw;
     opacity: 1;
     font-weight: bold;
     text-align: center;
@@ -37,13 +50,35 @@ body {
 }
 
 .banner-text h1:hover {
-    font-size: 40px;
+    font-size: 3.5vw;
     transition: ease-in-out 250ms;
 }
 
-@media (max-width:991px) {
-    .bannerPic {
-        display: none;
+@media only screen and (max-width: 700px) {
+    .banner img {
+        content: url("ImageAssets/FoodBannerSmall.png");
+        min-width: 700px;
+    }
+
+    .banner-text {
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 700px){
+    .banner img {
+        content: url("ImageAssets/FoodBannerSmall.png");
+        min-width: 700px;
+    }
+
+    .banner-text {
+        margin-top: -29%;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 991px) {
+    .banner-text {
+        margin-top: -285px;
     }
 }
 
