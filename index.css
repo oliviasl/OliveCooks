@@ -20,6 +20,7 @@ body {
     min-width: 1500px;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: -2;
 }
 
 .banner-text {
@@ -33,6 +34,7 @@ body {
     padding-top: .8em;
     padding-bottom: .5em;
     transition: ease-in-out 300ms;
+    z-index: -2;
 }
 
 .banner-text h1 {
@@ -82,6 +84,20 @@ body {
     }
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: ease-in-out 250ms;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -92,6 +108,9 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.nav-logo {
     z-index: 1;
 }
 
@@ -103,6 +122,7 @@ nav {
     list-style: none;
     direction: none;
     padding-top: 2vh;
+    z-index: 2;
 }
 
 .nav-links a {
@@ -120,7 +140,7 @@ nav {
     height: 3px;
     background-color: #690316;
     width: 0%;
-
+    z-index: 1;
     transition: ease-in-out 250ms;
 }
 
@@ -130,8 +150,70 @@ nav {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .nav-links {
-        display: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        position: absolute;
+        padding-top: 0;
+        right: 0px;
+        height: 40vh;
+        top: 15vh;
+        background-color: #ff9cae;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateY(-150%);
+        transition: ease-in-out 300ms;
+        z-index: -1;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .nav-active {
+        transform: translateY(0%);
+        transition: ease-in-out 500ms;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+        transition: ease-in-out 250ms;
+    }
+
+    .toggle .line2{
+        opacity: 0;
+        transition: ease-in-out 250ms;
+    }
+
+    .toggle .line3{
+        transform: rotate(+45deg) translate(-5px,-6px);
+        transition: ease-in-out 250ms;
+    }
+}
+
+.navbar-fixed {
+    position: absolute;
+    z-index: 0;
+    height: 15vh;
+    width: 100%;
+    transform: translateY(0%);
+    background-color: #ff9cae;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
