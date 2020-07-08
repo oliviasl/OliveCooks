@@ -20,7 +20,7 @@ body {
     min-width: 1500px;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: -2;
+    z-index: -1;
 }
 
 .banner-text {
@@ -34,7 +34,11 @@ body {
     padding-top: .8em;
     padding-bottom: .5em;
     transition: ease-in-out 300ms;
-    z-index: -2;
+    z-index: 0;
+}
+
+.banner-text-hide {
+    z-index: -1;
 }
 
 .banner-text h1 {
@@ -87,7 +91,7 @@ body {
 .burger {
     display: none;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 }
 
 .burger div{
@@ -111,7 +115,7 @@ nav {
 }
 
 .nav-logo {
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-links {
@@ -166,7 +170,7 @@ nav {
         width: 100%;
         transform: translateY(-150%);
         transition: ease-in-out 300ms;
-        z-index: -1;
+        z-index: 1;
     }
 
     .nav-links li{
@@ -200,7 +204,7 @@ nav {
 
 .navbar-fixed {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     height: 15vh;
     width: 100%;
     transform: translateY(0%);
