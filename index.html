@@ -7,15 +7,16 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <!-- My CSS -->
+        <!-- Other CSS -->
+        <link rel="stylesheet" href="animate.css">
         <link rel="stylesheet" href="index.css">
 
-        <title>Olive's Kitchen - home</title>
+        <title>Olive Cooks - home</title>
     </head>
     <body>
         <nav>
             <div class="nav-logo">
-                <h1>Olive Food 🍜</h1>
+                <h1>Olive Cooks 🍜</h1>
             </div>
             <ul class="nav-links">
                 <li>
@@ -39,12 +40,75 @@
             <div class="navbar-fixed"></div>
         </nav>
 
+        <!-- banner -->
         <div class="container-fluid banner">
             <img src="ImageAssets/FoodBannerBig.png" class="banner-img">
             <div class="banner-text">
                 <h1>~ Follow My Food Journey ~</h1>
             </div>
         </div>
+
+        <!-- welcome -->
+        <div class="divider"></div>
+        <div class="main animated fadeIn wow">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 main-text" style="padding-top: 9%;">
+                    <h1>Welcome to my food blog!</h1>
+                    <hr>
+                    <h3>
+                        Here you can follow my journey to becoming a master
+                        chef at asian cuisine.
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="ImageAssets/NoodleSoup.jpg" alt="Noodle Soup">
+                </div>
+            </div>
+        </div>
+        <img src="ImageAssets/RedDivider.svg" alt="Divider" class="divider-img">
+        <div class="main animated fadeIn wow">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="ImageAssets/HotPot.jpg" alt="Hot Pot">
+                </div>
+                <div class="col-lg-6 col-md-6 main-text" id="mygoal" style="padding-top: 5%;">
+                    <h1>My Goal</h1>
+                    <hr>
+                    <h3>
+                        My goal is to become a god level chef at Asian cuisine -- Asian grandma level.
+                        Any Asian kid will tell you that the highest quality of cooking
+                        doesn't come from Michelin star chefs, but from
+                        Asian grandmas who force feed you until you're fat.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <img src="ImageAssets/RedDivider.svg" alt="Divider" class="divider-img">
+        <div class="main animated fadeIn wow">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 main-text" style="padding-top: 9%;">
+                    <h1>Follow My Blog!</h1>
+                    <hr>
+                    <h3>
+                        I'll be using this website to share my latest recipes and creations.
+                        Feel free to email me any recipe suggestions to try out!
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="ImageAssets/DimSum.jpg" alt="Dim Sum" id="main-img-1">
+                    <div style="height: 20px;"></div>
+                    <img src="ImageAssets/PorkBao.jpg" alt="Pork Bao" id="main-img-2">
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+
+
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© Olive Cooks 2020</p>
+        </footer>
 
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -53,5 +117,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- My JavaScript -->
         <script src="index.js"></script>
+        <!-- wow.js -->
+        <script src="wow.js"></script>
+        <script>
+              new WOW().init();
+        </script>
     </body>
 </html>

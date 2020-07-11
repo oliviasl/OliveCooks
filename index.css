@@ -2,10 +2,11 @@
 
 body {
     font-family: 'Poiret One', cursive;
+    overflow-x: hidden;
 }
 
+/* banner */
 .banner {
-    margin-top: 15vh;
     padding-left: 0;
     padding-right: 0;
 }
@@ -88,6 +89,8 @@ body {
     }
 }
 
+
+/* navbar */
 .burger {
     display: none;
     cursor: pointer;
@@ -106,12 +109,12 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 15vh;
-    background-color: #ff9cae;
-    position: fixed;
-    top: 0;
+    height: 20vh;
+    background-color: white;
     left: 0;
     right: 0;
+    border-top: 5px double #b51b2d;
+    border-bottom: 5px double #b51b2d;
 }
 
 .nav-logo {
@@ -127,6 +130,7 @@ nav {
     direction: none;
     padding-top: 2vh;
     z-index: 2;
+    font-weight: bold;
 }
 
 .nav-links a {
@@ -135,14 +139,14 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #690316;
+    color: #b51b2d;
 }
 
 .nav-links a::before {
     content: '';
     display: block;
     height: 3px;
-    background-color: #690316;
+    background-color: #b51b2d;
     width: 0%;
     z-index: 1;
     transition: ease-in-out 250ms;
@@ -153,17 +157,92 @@ nav {
     transition: ease-in-out 250ms;
 }
 
+.navbar-fixed {
+    border-top: 5px double #b51b2d;
+    border-bottom: 5px double #b51b2d;
+    position: absolute;
+    z-index: 1;
+    height: 20vh;
+    width: 100%;
+    transform: translateY(0%);
+    background-color: white;
+}
 
-@media (max-width: 750px) {
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* index.html content */
+.main {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.main img {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+#main-img-1 {
+    margin-left: 0;
+}
+
+#main-img-2 {
+    margin-right: 0;
+}
+
+.main h1 {
+    font-weight: bold;
+    font-size: 4.5vw;
+}
+
+.main h3 {
+    font-size: 2.25vw;
+}
+
+.main-text {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.divider {
+    height: 15vw;
+}
+
+.divider-img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7vh;
+}
+
+/* screen medias */
+@media only screen and (max-width: 750px) {
+    /* navbar */
     .nav-links {
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-bottom: 5px double #b51b2d;
         position: absolute;
         padding-top: 0;
         right: 0px;
         height: 40vh;
-        top: 15vh;
-        background-color: #ff9cae;
+        top: 20vh;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -200,24 +279,28 @@ nav {
         transform: rotate(+45deg) translate(-5px,-6px);
         transition: ease-in-out 250ms;
     }
+
+    /* index.html content */
+    .main h1 {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .main h3 {
+        font-size: 20px;
+    }
+
+    #mygoal {
+        order: -1;
+    }
 }
 
-.navbar-fixed {
-    position: absolute;
-    z-index: 1;
+footer {
+    text-align: center;
     height: 15vh;
-    width: 100%;
-    transform: translateY(0%);
-    background-color: #ff9cae;
 }
 
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+footer p {
+    padding-top: 3.5vh;
+    font-size: 14px;
 }
