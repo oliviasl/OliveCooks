@@ -113,8 +113,8 @@ nav {
     background-color: white;
     left: 0;
     right: 0;
-    border-top: 5px double #b51b2d;
-    border-bottom: 5px double #b51b2d;
+    border-top: 5px double #d60629;
+    border-bottom: 5px double #d60629;
 }
 
 .nav-logo {
@@ -139,14 +139,14 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #b51b2d;
+    color: #d60629;
 }
 
 .nav-links a::before {
     content: '';
     display: block;
     height: 3px;
-    background-color: #b51b2d;
+    background-color: #d60629;
     width: 0%;
     z-index: 1;
     transition: ease-in-out 250ms;
@@ -158,8 +158,8 @@ nav {
 }
 
 .navbar-fixed {
-    border-top: 5px double #b51b2d;
-    border-bottom: 5px double #b51b2d;
+    border-top: 5px double #d60629;
+    border-bottom: 5px double #d60629;
     position: absolute;
     z-index: 1;
     height: 20vh;
@@ -236,7 +236,7 @@ nav {
 @media only screen and (max-width: 750px) {
     /* navbar */
     .nav-links {
-        border-bottom: 5px double #b51b2d;
+        border-bottom: 5px double #d60629;
         position: absolute;
         padding-top: 0;
         right: 0px;
