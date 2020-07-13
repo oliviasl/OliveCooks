@@ -293,7 +293,135 @@ nav {
     #mygoal {
         order: -1;
     }
+
+    .heading {
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .heading h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .blog-posts {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .blog-post {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+
+    .blog-post h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .blog-post h4 {
+        font-size: 20px;
+    }
+
+    .blog-post p {
+        font-size: 20px;
+    }
+
+    .recipe-section {
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 }
+
+@media only screen and (min-width: 750px) {
+
+    .heading {
+        padding-top: 10vh;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    .heading h1 {
+        font-weight: bold;
+    }
+
+    .blog-posts {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    .blog-post {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .blog-post h1 {
+        font-weight: bold;
+    }
+
+    .blog-post h4 {
+        font-size: 26px;
+    }
+
+    .blog-post p {
+        font-size: 24px;
+    }
+
+    .recipe-section {
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+.recipe-section img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    display: block;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-container:hover img{
+    opacity: .5;
+    transition: .5s ease;
+}
+
+.recipe-section a {
+    color: white;
+    background-color: #ff3352;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    text-decoration: none;
+    width: 40%;
+    height: 20%;
+    padding-top: 3%;
+    font-size: 2vw;
+}
+
+.recipe-container:hover a{
+    opacity: .9;
+    transition: .5s ease;
+}
+
+.recipe-container a:hover {
+    background-color: white;
+    color: black;
+}
+
+
 
 footer {
     text-align: center;
