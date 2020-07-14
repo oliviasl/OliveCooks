@@ -423,11 +423,21 @@ nav {
     color: black;
 }
 
+.subscribe {
+    border: 2px solid darkgray;
+    color: white;
+    background-color: #ff3352;
+}
+
+.subscribe:hover {
+    background-color: #db0b2b;
+}
+
 
 
 footer {
     text-align: center;
-    height: 15vh;
+    height: 20vh;
 }
 
 footer p {

@@ -12,7 +12,14 @@
         <link rel="stylesheet" href="index.css">
 
         <!-- mailchimp -->
-        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7e6b734e8e8c8bcdb79af39d4/2a7f01c3eb02abdbb55560511.js");</script>
+        <script id="mcjs">
+            function showMailingPopUp(){
+                !function(c,h,i,m,p){
+                    m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+                }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7e6b734e8e8c8bcdb79af39d4/2a7f01c3eb02abdbb55560511.js");
+            }
+            document.getElementById("open-popup").onclick = function(){showMailingPopUp()};
+        </script>
 
         <title>Olive Cooks - home</title>
     </head>
@@ -107,6 +114,7 @@
         <footer>
             <hr>
             <p>© Olive Cooks 2020</p>
+            <button id="open-popup" type="button" name="subscribe" class="subscribe">Subscribe to the Mailing List</button>
         </footer>
 
 
