@@ -121,6 +121,12 @@ nav {
     z-index: 2;
 }
 
+.nav-brand {
+    width: 10vh;
+    height: auto;
+    margin-top: -3vh;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -432,7 +438,6 @@ nav {
 .subscribe:hover {
     background-color: #db0b2b;
 }
-
 
 
 footer {
