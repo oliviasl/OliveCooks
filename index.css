@@ -328,10 +328,8 @@ nav {
         font-size: 20px;
     }
 
-    .recipe-section {
-        padding-top: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
+    .recipe-section a {
+        font-size: 3.5vw;
     }
 }
 
@@ -369,11 +367,16 @@ nav {
         font-size: 24px;
     }
 
-    .recipe-section {
-        padding-top: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
+    .recipe-section a {
+        font-size: 2vw;
     }
+}
+
+.recipe-section {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10vh;
 }
 
 .recipe-section img {
@@ -408,7 +411,6 @@ nav {
     width: 40%;
     height: 20%;
     padding-top: 3%;
-    font-size: 2vw;
 }
 
 .recipe-container:hover a{
