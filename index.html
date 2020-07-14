@@ -16,10 +16,10 @@
         <script>
             function showMailingPopUp() {
             require(
-            ["mojo/signup-forms/Loader"],
-            function(L) {
-            L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"7e6b734e8e8c8bcdb79af39d4","lid":"4593b23237"})
-            }
+                ["mojo/signup-forms/Loader"],
+                function(L) {
+                    L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"7e6b734e8e8c8bcdb79af39d4","lid":"4593b23237"})
+                }
             );
 
             document.cookie = ‘MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;’;
@@ -122,7 +122,7 @@
         <footer>
             <hr>
             <p>© Olive Cooks 2020</p>
-            <button id="open-popup" type="button" name="subscribe" class="subscribe">Subscribe to the Mailing List</button>
+            <button id="open-popup" onclick="showMailingPopUp(); return false;" class="subscribe">Subscribe to the Mailing List</button>
         </footer>
 
 
