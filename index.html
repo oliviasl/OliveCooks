@@ -12,13 +12,21 @@
         <link rel="stylesheet" href="index.css">
 
         <!-- mailchimp -->
-        <script id="mcjs">
-            function showMailingPopUp(){
-                !function(c,h,i,m,p){
-                    m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
-                }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7e6b734e8e8c8bcdb79af39d4/2a7f01c3eb02abdbb55560511.js");
+        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+        <script>
+            function showMailingPopUp() {
+            require(
+            ["mojo/signup-forms/Loader"],
+            function(L) {
+            L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"7e6b734e8e8c8bcdb79af39d4","lid":"2a7f01c3eb02abdbb55560511"})
             }
-            document.getElementById("open-popup").onclick = function(){showMailingPopUp()};
+            );
+
+            document.cookie = ‘MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;’;
+            document.cookie = ‘MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;’;
+            }
+
+            document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
         </script>
 
         <title>Olive Cooks - home</title>
