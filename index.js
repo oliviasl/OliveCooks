@@ -27,4 +27,19 @@ const navSlide = () => {
 
 }
 
+//mailchimp
+function showMailingPopUp() {
+    require(
+        ["mojo/signup-forms/Loader"],
+        function(L) {
+            L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"7e6b734e8e8c8bcdb79af39d4","lid":"4593b23237"})
+        }
+    );
+
+    document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+    document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+}
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+
 navSlide();
