@@ -28,7 +28,7 @@ body {
     background-color: white;
     position: absolute;
     display: block;
-    margin-top: -22%;
+    margin-top: -24%;
     left: 0;
     right: 0;
     opacity: .8;
@@ -44,7 +44,7 @@ body {
 
 .banner-text h1 {
     color: black;
-    font-size: 3vw;
+    font-size: 4vw;
     opacity: 1;
     font-weight: bold;
     text-align: center;
@@ -57,7 +57,7 @@ body {
 }
 
 .banner-text h1:hover {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     transition: ease-in-out 250ms;
 }
 
@@ -312,6 +312,10 @@ nav {
         font-size: 30px;
     }
 
+    .heading h4 {
+        font-size: 20px;
+    }
+
     .blog-posts {
         padding-left: 10vw;
         padding-right: 10vw;
@@ -328,7 +332,7 @@ nav {
     }
 
     .blog-post h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .blog-post p {
@@ -337,6 +341,10 @@ nav {
 
     .recipe-section a {
         font-size: 3.5vw;
+    }
+
+    .caption {
+        font-size: 14px!important;
     }
 }
 
@@ -350,6 +358,10 @@ nav {
 
     .heading h1 {
         font-weight: bold;
+    }
+
+    .heading h4 {
+        font-size: 24px;
     }
 
     .blog-posts {
@@ -376,6 +388,10 @@ nav {
 
     .recipe-section a {
         font-size: 2vw;
+    }
+
+    .caption {
+        font-size: 18px!important;
     }
 }
 
@@ -417,7 +433,11 @@ nav {
     text-decoration: none;
     width: 40%;
     height: 20%;
-    padding-top: 3%;
+    padding-top: 3.5%;
+}
+
+.recipe-container {
+    margin: .5vw;
 }
 
 .recipe-container:hover a{
@@ -428,6 +448,10 @@ nav {
 .recipe-container a:hover {
     background-color: white;
     color: black;
+}
+
+.recipe-link {
+    top: 65%!important;
 }
 
 .subscribe {
